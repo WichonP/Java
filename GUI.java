@@ -42,26 +42,11 @@ public class GUI extends JFrame{
         ImageIcon baphoJr = new ImageIcon("BaphoJr2.gif");
         JLabel mons = new JLabel(baphoJr);
 
-
-        pic.add(character);
+        pic.add(chacter);
         pic2.add(mons);
-
-
-
-
         p1.add(pic);
         p1.add(pic2);
         c.add(p1);
-
-
-
-
-
-
-
-
-
-
 
         JPanel p2 = new JPanel();
         p2.setLayout(new GridLayout(1, 3));
@@ -73,9 +58,6 @@ public class GUI extends JFrame{
         JLabel mp = new JLabel(" MP : "+ novice.showMp()+"/"+novice.getMaxMp());
         JLabel exp = new JLabel(" Exp : " + novice.showExp() + '/' + novice.getMaxExp());
         JLabel count = new JLabel(" Monster Kill : " + novice.getCount());
-
-       
-
 
         JPanel statusM = new JPanel();
         statusM.setLayout(new BoxLayout(statusM, BoxLayout.Y_AXIS));
@@ -95,7 +77,6 @@ public class GUI extends JFrame{
         swordman.setVisible(false);
         mage.setVisible(false);
         
-
         attack.addActionListener(new ActionListener(){
         
             @Override
@@ -274,9 +255,6 @@ public class GUI extends JFrame{
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
-
-
-
 
     }
     public static void main(String[] args){
